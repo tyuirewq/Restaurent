@@ -1,0 +1,52 @@
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color:rgb(248, 232, 217);
+    border-bottom: 2px solid rgb(252, 196, 124);
+    box-shadow: 0 2px 20px rgb(253,124,124);
+}
+.footer {
+    background-color: rgb(219, 194, 170);
+    color: white;
+    padding-top: 0.1vw;
+    padding-bottom: 0.1vw;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons a:nth-child(1){
+    font-size: 1.8vw;
+    transition: all 0.1s;
+}
+
+.icons a>:hover{
+    transform: scale(1.4);
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.contactinfo{
+    display: flex;
+    text-align: left;
+}
+
+.address{
+    padding-left: 20px;
+}
