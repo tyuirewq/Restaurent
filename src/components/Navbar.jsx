@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import LogoImage from '../Images/logo.jpg'
-import BannerImage from '../Images/banner-2.jpg'
 import { AiFillHome} from 'react-icons/ai'
 import {BsSearch, BsFillPersonFill} from 'react-icons/bs'
 
 const Navbar = () => {
   const [ter, setTer] = useState(false);
-  console.log(ter);
   return (
     <div>
       <header>
@@ -30,26 +28,26 @@ const Navbar = () => {
             </div>
             <div className="account">
                 <ul>
-                    <a href="#">
+                    <Link to="">
                         <li>
                             <i className="fa-solid fa-house-chimney"><AiFillHome/></i>
                         </li>
-                    </a>
-                    {!ter &&<a href="#">
+                    </Link>
+                    {!ter &&<Link to="">
                         <li>
                             <i className="searchicon" id="searchicon2" onClick={() => {setTer(!ter)}}><BsSearch/></i>
                         </li>
-                    </a>}
+                    </Link>}
                     {ter && <div className='search'> 
                       <input type="search" name="" id="" />
                       <i className="srchicon" id="searchicon2" onClick={() => {setTer(!ter)}}><BsSearch/>
                       </i> 
                       </div>}
-                    <a href="#">
+                    <Link to="">
                         <li>
                             <i><BsFillPersonFill/></i>
                         </li>
-                    </a>
+                    </Link>
                 </ul>
             </div>
         </div>
